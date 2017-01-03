@@ -294,7 +294,7 @@ class Menu extends Model
                 $collapse_id = Str::slug($item->title, '-').'-dropdown-element';
                 $a_attrs = 'data-toggle="collapse" href="#'.$collapse_id.'"';
             } else {
-                $a_attrs = 'href="'.$item->url.'"';
+                $a_attrs = 'href="'.url($item->url).'"';
             }
 
             // Permission Checker
